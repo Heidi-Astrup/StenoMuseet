@@ -15,7 +15,6 @@
 
     --displayFont: 'Impact', sans-serif;
     --font: 'Noto Sans', sans-serif;
-    --fontStyle: bold;
 
 }
 
@@ -32,6 +31,8 @@ h2 {
     font-family: var(--displayFont);
     margin-bottom: 0px;
     margin-top: 0px;
+    font-weight: 100;
+
 
 }
 
@@ -40,6 +41,13 @@ h3 {
     font-family: var(--displayFont);
     margin-top: 0px;
     margin-bottom: 0px;
+    font-weight: 100;
 
+}
+
+p {
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 30px;
 }
 
