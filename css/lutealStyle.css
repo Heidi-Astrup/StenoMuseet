@@ -1,0 +1,26 @@
+
+
+h2 {
+    font-size: 120px;
+    font-family: var(--displayFont);
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+h3 {
+    font-size: 60px;
+    font-family: var(--displayFont);
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+div {
+    border: 2px solid red;
+}
