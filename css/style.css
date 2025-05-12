@@ -1,0 +1,18 @@
+
+:root {
+    --lysGul: #f0d597;
+    --orange: #ee6f20;
+    --lyserod: #f7d1be;
+    --primærRod: #b02519;
+    --eglosningRod: #82363b;
+    --forsideRod: #b24c47;
+}
+
+
+h1 {
+    color: var(--lysGul);
+}
+
+main {
+    background: var(--forsideRod);
+}
