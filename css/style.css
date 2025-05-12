@@ -1,3 +1,9 @@
+/*Import af display font*/
+@import url('https://fonts.cdnfonts.com/css/impact');
+
+/*Import af brødtekst font*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 :root {
     --lysGul: #f0d597;
@@ -6,6 +12,11 @@
     --primærRod: #b02519;
     --eglosningRod: #82363b;
     --forsideRod: #b24c47;
+
+    --displayFont: 'Impact', sans-serif;
+    --font: 'Noto Sans', sans-serif;
+    --fontStyle: bold;
+
 }
 
 
@@ -13,6 +24,22 @@ h1 {
     color: var(--lysGul);
 }
 
-main {
-    background: var(--forsideRod);
+
+
+
+h2 {
+    font-size: 120px;
+    font-family: var(--displayFont);
+    margin-bottom: 0px;
+    margin-top: 0px;
+
 }
+
+h3 {
+    font-size: 60px;
+    font-family: var(--displayFont);
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
