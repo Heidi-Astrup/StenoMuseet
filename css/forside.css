@@ -1,0 +1,25 @@
+#overskriftforside {
+    color: #f0d597;
+    text-align: center;
+}
+
+.cls-1 {
+  fill: none;
+}
+
+.cls-2 {
+  fill: #f0d597;
+}
+
+.cls-3 {
+  clip-path: url(#clippath-1);
+}
+
+.cls-4 {
+  clip-path: url(#clippath);
+}
+
+.cyklus {
+    width: 80%;
+    justify-self: center;
+}
