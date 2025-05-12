@@ -24,15 +24,65 @@ body {
 
 h2, h3, p {
     color: var(--lysGul);
-    
 }
 
-.container {
+p {
+    word-wrap: break-word;
+
+}
+
+#br {
+    margin-top: 30px;
+}
+
+.containerO {
     display: flex;
     justify-content: flex-start;
 }
 
-#ostrogenTekst {
+#ostrogenTekst, #sporgsmalSektion {
     width: 90%;
     margin: auto;
+}
+
+
+
+
+
+/* The container */
+.container {
+  display: row;
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 12px;
+  margin-right: 50px;
+  cursor: pointer;
+  font-size: 40px;
+  font-family: var(--displayFont);
+  font-weight: 100;
+  color: var(--lysGul);
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 35px;
+  border: 7px solid var(--lysGul);
+  border-radius: 50%;
+}
+
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: var(--lysGul);
 }
