@@ -56,3 +56,28 @@ p {
     justify-content: flex-start;
 }
 
+
+footer {
+    line-height: 1.6;
+}
+
+#footerlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer h3 {color: #000;}
+
+#farvefooter1 {background-color: var(--primærRod);}
+#farvefooter2 {background-color: var(--lyserod);}
+#farvefooter3 {background-color: var(--lysGul);}
+#farvefooter4 {background-color: var(--orange);}
