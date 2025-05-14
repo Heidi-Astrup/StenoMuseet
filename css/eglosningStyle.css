@@ -48,3 +48,20 @@ h2, h3 {
 .leaflet-container {
     background-color:rgba(255,0,0,0.0);
 }
+
+/*Flex'er tekst og graf, så de står ved siden af hinanden*/
+#grafPeak {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    color: var(--eglosningRod);
+}
+
+.tekst {
+    width: 40%;
+}
+
+.graf {
+    width: 60%;
+}
