@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 605.52 527.1">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: .01em;
+      }
+
+      .cls-4 {
+        fill: #83363c;
+        font-family: PublicSansRoman-Bold, 'Public Sans';
+        font-size: 32px;
+        font-variation-settings: 'wght' 700;
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-12 {
+        letter-spacing: 0em;
+      }
+
+      .cls-13 {
+        fill: #af2824;
+      }
+
+      .cls-13, .cls-14 {
+        stroke: #83363c;
+        stroke-miterlimit: 10;
+        stroke-width: 7px;
+      }
+
+      .cls-15 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-16 {
+        letter-spacing: 0em;
+      }
+
+      .cls-17 {
+        letter-spacing: 0em;
+      }
+
+      .cls-18 {
+        letter-spacing: 0em;
+      }
+
+      .cls-19 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-14 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <line class="cls-13" x1="51.13" y1="447.63" x2="52.28" y2="45.57"/>
+  <line class="cls-13" x1="555.13" y1="441.74" x2="47.56" y2="443.99"/>
+  <polyline class="cls-14" points="70.82 72.82 51.8 37.16 29.22 71.34"/>
+  <polyline class="cls-14" points="525.7 462.61 560.77 442.52 525.92 420.98"/>
+  <text class="cls-4" transform="translate(70.01 481.91)"><tspan class="cls-9" x="0" y="0">F</tspan><tspan x="18.98" y="0">o</tspan><tspan class="cls-15" x="37.39" y="0">l</tspan><tspan class="cls-17" x="47.44" y="0">l</tspan><tspan class="cls-18" x="57.81" y="0">i</tspan><tspan class="cls-6" x="66.45" y="0">k</tspan><tspan class="cls-18" x="84.74" y="0">u</tspan><tspan class="cls-16" x="103.87" y="0">l</tspan><tspan class="cls-8" x="114.24" y="0">ær </tspan><tspan class="cls-3" x="163.87" y="0">f</tspan><tspan class="cls-1" x="176.94" y="0">a</tspan><tspan x="194.91" y="0">s</tspan><tspan class="cls-11" x="211.77" y="0">e</tspan></text>
+  <text class="cls-4" transform="translate(411.41 85.06)"><tspan x="0" y="0">Ø</tspan><tspan class="cls-2" x="24.83" y="0">s</tspan><tspan class="cls-8" x="41.6" y="0">t</tspan><tspan class="cls-12" x="54.93" y="0">r</tspan><tspan x="68.08" y="0">ogen</tspan></text>
+  <path class="cls-14" d="M489.78,99.23c-30.78,31.93-131.03,129.14-161.8,161.07-14,26.78-48.52,83.99-117.43,127.77-65.83,41.82-129.24,49.91-159.42,51.83"/>
+  <line class="cls-14" x1="329.15" y1="495.48" x2="329.15" y2="46.95"/>
+  <text class="cls-4" transform="translate(352.78 482.23)"><tspan class="cls-7" x="0" y="0">Æ</tspan><tspan class="cls-5" x="32.91" y="0">g</tspan><tspan class="cls-19" x="53.02" y="0">l</tspan><tspan class="cls-10" x="62.58" y="0">ø</tspan><tspan x="82.1" y="0">sn</tspan><tspan class="cls-18" x="117.94" y="0">i</tspan><tspan x="126.58" y="0">ng</tspan></text>
+</svg>
