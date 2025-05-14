@@ -16,8 +16,16 @@ main {
     display: flex;
     justify-content: flex-start;
 }
-/*Videokommentar*/
+
+/*Video - kommentar*/
 video { width: 100%; max-width: 100%; margin: 20px auto; display: block; }
 #questionBox, #factBox { display: none; background: white; margin: 20px auto; padding: 20px; border-radius: 10px; width: 80%; max-width: 600px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
 .btn { background: #007BFF; color: white; border: none; padding: 10px 20px; margin: 10px; border-radius: 5px; cursor: pointer; }
 .btn:hover { background: #0056b3; }
+
+#boks {
+    background-color: white;
+    z-index: 100;
+    position: absolute;
+    top: 800px;
+}

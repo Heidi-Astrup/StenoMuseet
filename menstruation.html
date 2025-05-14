@@ -23,7 +23,7 @@
         </div>
     </div>
 
-    <video id="videoPlayer" controls></video>
+    <!--<video id="videoPlayer" controls></video>
 
     <div id="questionBox">
       <p id="questionText"></p>
@@ -35,13 +35,142 @@
       <p>Store smerter i maven, som 10% af alle kvinder har, men kun få ved det.<br>Det tager 7 år i gennemsnit at få konstateret, da vi mærker smerte meget forskelligt.
         </p>
       <button class="btn" onclick="alert('Link til mere information...')">Lær mere</button>
-    </div>
+    </div> !-->
 
+    <div id="hej"></div>
 
+    <video id="video" playsinline controls autoplay width="700" controls>
+      <source src="https://videoer.astrupdesigns.dk/endometriose.mov" type="video/mp4">
+    </video>
+    
+
+    
 </main>
 
 <script>
-    const videos = [
+  /*var vid = document.getElementById("minVideo"); 
+
+  
+    function playPause() { 
+    if (vid.paused) 
+      vid.play(); 
+    else 
+      vid.pause(); 
+  } */
+
+
+  //kilde: https://stackoverflow.com/questions/53921097/html5-video-pause-for-a-few-seconds-then-continue-playback
+var video = document.getElementById('video');
+
+video.addEventListener("timeupdate", tick);
+
+function tick(e) {
+  var t = this.currentTime;
+  if (t >= 3) {
+    this.pause();
+    video.removeEventListener("timeupdate", tick);
+    knap(); //hjælp fra chatGPT: https://chatgpt.com/share/68248075-2b30-800e-bd4a-ed1d5a6fbc4e
+  }
+}
+
+function knap () {
+        hej.innerHTML += `
+        <article id="boks">
+          <p>Hvor meget blod bløder en kvinde i gennemsnit?</p>
+          <button type="button" onclick="playVid()">10 ml</button>
+          <button type="button" onclick="playVid()">50 ml</button>
+        </article>
+        `
+    }
+
+  //https://www.w3schools.com/TagS/tryit.asp?filename=tryhtml5_av_met_play_pause
+let vid = document.getElementById("video"); 
+
+  function playVid() { 
+  vid.play(); 
+  hej.innerHTML = `
+        
+        `
+  tick2();
+} 
+
+
+/*video.addEventListener("timeupdate", function(){
+  if(this.currentTime >= 5) {
+    this.pause();
+  }
+
+  */
+
+  //hjælp dfra chatGPT: https://chatgpt.com/c/68248a79-4164-800e-bf2b-09271e01c140
+function tick2 () {
+  setTimeout(() => {
+      video.pause(); // Pause the video
+      // Optionally reset the video's playback position
+      // video.currentTime = 0;
+    knap2()
+    }, 7 * 1000);
+    
+  }
+
+  function knap2 () {
+    hej.innerHTML += `
+        <article id="boks">
+          <p>vor mange dage bløder man i gennemsnit?</p>
+          <button type="button" onclick="playVid2()">4-5 dage</button>
+          <button type="button" onclick="playVid2()">6-9 dage</button>
+        </article>
+        `
+  }
+
+    function playVid2() { 
+  vid.play(); 
+  hej.innerHTML = `
+        
+        `
+  tick3();
+} 
+
+  function tick3 () {
+  setTimeout(() => {
+      video.pause(); // Pause the video
+      // Optionally reset the video's playback position
+      // video.currentTime = 0;
+    knap3()
+    }, 7 * 1000);
+    
+  }
+
+  function knap3 () {
+    hej.innerHTML += `
+        <article id="boks">
+          <p>Vil du læse mere om endometriose</p>
+          <button type="button" onclick="playVid3()">Læse mere</button>
+          <button type="button" onclick="playVid3()">Nej tak</button>
+        </article>
+        `
+  }
+
+      function playVid3() { 
+  vid.play(); 
+  hej.innerHTML = `
+        
+        `
+} 
+
+/*
+function tick2(e) {
+  var t = this.currentTime;
+  if (t >= 5) {
+    this.pause();
+    video.removeEventListener("timeupdate", tick);
+    knap3(); //hjælp fra chatGPT: https://chatgpt.com/share/68248075-2b30-800e-bd4a-ed1d5a6fbc4e
+  }
+}*/
+
+
+
+    /* const videos = [
       { src: 'https://www.w3schools.com/html/mov_bbb.mp4', question: 'Hvad handlede video 1 om?' },
       { src: 'https://www.w3schools.com/html/mov_bbb.mp4', question: 'Hvad så du i video 2?' },
     ];
@@ -73,7 +202,7 @@
     }
 
     // Start første video
-    playVideo(currentIndex);
+    playVideo(currentIndex);*/
   </script>
 
 </body>
