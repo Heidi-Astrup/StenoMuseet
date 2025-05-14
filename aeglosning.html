@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ægløsning | Indre sommer</title>
+
+    <!-- Stylesheat og javascript fra leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <!--Vores egne stylesheat-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/eglosningStyle.css">
+</head>
+<body>
+
+    <main>
+        <div class="containerO">
+            <div>
+                <!--Cirkel med svg -->
+                <svg height="240" width="240" xmlns="http://www.w3.org/2000/svg">
+                    <circle id="cirkel" r="75" cx="120" cy="120" stroke="#82363B" stroke-width="50" fill="none" />
+                </svg> 
+            </div>
+            <div>
+                <h2>ÆGLØSNING</h2> 
+                <h3>- INDRE SOMMER</h3>
+            </div>
+        </div>
+
+        <!--Livmoderen som kort - brug af leaflet libery-->
+        <aside id="livmoder"></aside>
+        
+
+    </main>
+
+
+    <script src="js/livmoder.js"></script>
+    
+    
+</body>
+</html>

@@ -35,10 +35,6 @@ p {
     margin-top: 30px;
 }
 
-.containerO {
-    display: flex;
-    justify-content: flex-start;
-}
 
 #ostrogenTekst, #sporgsmalSektion {
     width: 90%;

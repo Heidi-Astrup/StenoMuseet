@@ -50,3 +50,9 @@ p {
     font-size: 30px;
 }
 
+
+.containerO {
+    display: flex;
+    justify-content: flex-start;
+}
+
