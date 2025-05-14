@@ -27,6 +27,11 @@ h2, h3 {
     color: var(--eglosningRod);
 }
 
+#tryk {
+    color: var(--eglosningRod);
+    width: 90%;
+    margin: auto;
+}
 
 #livmoder { 
     height: 750px; 
@@ -51,17 +56,17 @@ h2, h3 {
 
 /*Flex'er tekst og graf, så de står ved siden af hinanden*/
 #grafPeak {
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;
+    justify-content: space-between;*/
     width: 95%;
     margin: auto;
     color: var(--eglosningRod);
 }
 
-.tekst {
-    width: 40%;
-}
 
+/*kilde: https://www.geeksforgeeks.org/how-to-wrap-the-text-around-an-image-using-html-and-css/ */
 .graf {
+    float: right;
+    margin: 15px;
     width: 60%;
 }
