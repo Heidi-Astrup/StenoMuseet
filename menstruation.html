@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menstruation.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+    <div class="containerO">
+        <div>
+            <!--Cirkel med svg -->
+            <svg height="240" width="240" xmlns="http://www.w3.org/2000/svg">
+                <circle id="cirkel" r="75" cx="120" cy="120" stroke="#F7D1BE" stroke-width="50" fill="none" />
+            </svg> 
+        </div>
+        <div>
+            <h2>MENSTRUATION</h2> 
+            <h3>- INDRE VINTER</h3>
+        </div>
+    </div>
+
+    <video id="videoPlayer" controls>
+    </video>
+
+    <div id="questionBox">
+      <p id="questionText"></p>
+      <button class="btn" onclick="handleAnswer()">Svar</button>
+    </div>
+  
+    <div id="factBox">
+      <h2>Vil du vide mere?</h2>
+      <p>Dette emne handler om vigtige fakta. Du kan lære mere ved at besøge vores informationsside.</p>
+      <button class="btn" onclick="alert('Link til mere information...')">Lær mere</button>
+    </div>
+
+
+</main>
+
+<script>
+    const videos = [
+      { src: 'https://www.w3schools.com/html/mov_bbb.mp4', question: 'Hvad handlede video 1 om?' },
+      { src: 'https://www.w3schools.com/html/mov_bbb.mp4', question: 'Hvad så du i video 2?' },
+      { src: 'https://www.w3schools.com/html/mov_bbb.mp4', question: 'Hvad var det vigtigste fra video 3?' }
+    ];
+
+    let currentIndex = 0;
+    const videoPlayer = document.getElementById('videoPlayer');
+    const questionBox = document.getElementById('questionBox');
+    const questionText = document.getElementById('questionText');
+    const factBox = document.getElementById('factBox');
+
+    function playVideo(index) {
+      videoPlayer.src = videos[index].src;
+      videoPlayer.play();
+    }
+
+    videoPlayer.addEventListener('ended', () => {
+      questionText.textContent = videos[currentIndex].question;
+      questionBox.style.display = 'block';
+    });
+
+    function handleAnswer() {
+      questionBox.style.display = 'none';
+      currentIndex++;
+      if (currentIndex < videos.length) {
+        playVideo(currentIndex);
+      } else {
+        factBox.style.display = 'block';
+        videoPlayer.style.display = 'none';
+      }
+    }
+
+    // Start første video
+    playVideo(currentIndex);
+  </script>
+
+</body>
+</html>
