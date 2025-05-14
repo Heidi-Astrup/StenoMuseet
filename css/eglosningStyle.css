@@ -64,7 +64,7 @@ h2, h3 {
 }
 
 
-/*kilde: https://www.geeksforgeeks.org/how-to-wrap-the-text-around-an-image-using-html-and-css/ */
+/*kilde til at lave skrift omkring billede: https://www.geeksforgeeks.org/how-to-wrap-the-text-around-an-image-using-html-and-css/ */
 .graf {
     float: right;
     margin: 15px;
