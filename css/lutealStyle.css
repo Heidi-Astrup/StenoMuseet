@@ -82,3 +82,9 @@ p {
 .container input:checked ~ .checkmark {
     background-color: var(--lysGul);
 }
+
+
+#pms {
+    width: 90%;
+    margin: auto;
+}

@@ -29,17 +29,20 @@ h2, h3 {
 
 #tryk {
     color: var(--eglosningRod);
-    width: 90%;
+    width: 35%;
     margin: auto;
+    z-index: 100;
+    position: absolute;
+    top: 650px;
+    left: 5%;
+    font-size: 40px;
+    text-align: center;
 }
 
 #livmoder { 
     height: 750px; 
     width: 95%;
     margin: auto;
-    /*border-radius giver kortet runde hjørner*/
-    border-radius: 30px;
-    border: 2px solid rgb(216, 112, 147);
 }
 
 /*Ændre farven på popup fra leaflet - kilde til hjælp: https://stackoverflow.com/questions/20532635/how-can-i-change-the-background-color-of-a-leaflet-popup */

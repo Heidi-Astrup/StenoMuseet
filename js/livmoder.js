@@ -24,7 +24,7 @@ var leder = L.polygon([
     [750, 100], //venstre top
     [700, 100], //venstre bund
     [690, 320]  //højre bund
-], {color: '216, 112, 147, 0'}
+], {color: 'rgba(255,0,0,0)'}
 ).addTo(map).bindPopup("<p>Æggeleder - Bruges til at føre ægget ud i livmoderen</p>");
 
 //livmoder
@@ -33,7 +33,7 @@ var moder = L.polygon([
     [850, 350], //venstre top
     [550, 350], //venstre bund
     [550, 650]  //højre bund
-], {color: '216, 112, 147, 0'}
+], {color: 'rgba(255,0,0,0)'}
 ).addTo(map).bindPopup("<p>Livmoder</p>");
 
 //skede
@@ -42,13 +42,13 @@ var skede = L.polygon([
     [540, 410], //venstre top
     [150, 450], //venstre bund
     [150, 560]  //højre bund
-], {color: '216, 112, 147, 0'}
+], {color: 'rgba(255,0,0,0)'}
 ).addTo(map).bindPopup("<p>Skede</p>");
 
 //modnet æg
 var modnetEg = L.circle([730, 865], {
-    color: '216, 112, 147, 0',
-    fillColor: '#216, 112, 147, 0',
+    color: 'rgba(255,0,0,0)',
+    fillColor: 'rgba(255,0,0,0)',
     radius: 25
 }).addTo(map).bindPopup("<p>Modnet æg</p>");
 
@@ -59,19 +59,19 @@ var skede = L.polygon([
     [570, 780], //venstre bund
     [540, 830], //højre bund
     [570, 910]  //højre midt
-], {color: '216, 112, 147, 0'}
+], {color: 'rgba(255,0,0,0)'}
 ).addTo(map).bindPopup("<p>Æggestok = æggebakke til alle ægene</p>");
 
 //folikkel
 var folikkel = L.circle([583, 850], {
-    color: '216, 112, 147, 0',
-    fillColor: '#216, 112, 147, 0',
+    color: 'rgba(255,0,0,0)',
+    fillColor: 'rgba(255,0,0,0)',
     radius: 20
 }).addTo(map).bindPopup("<p>Folikkel = basiclly en æggeskal, hvor æget ligger indeni</p>");
 
 //eg
 var eg = L.circle([623, 875], {
-    color: '216, 112, 147, 0',
-    fillColor: '#216, 112, 147, 0',
+    color: 'rgba(255,0,0,0)',
+    fillColor: 'rgba(255,0,0,0)',
     radius: 10
 }).addTo(map).bindPopup("<p>Æg = æggehvide og æggeblomme</p>");

@@ -17,6 +17,10 @@
 
 }
 
+body {
+    margin: 0px;
+}
+
 
 h1 {
     color: var(--lysGul);
@@ -59,25 +63,38 @@ p {
 
 footer {
     line-height: 1.6;
+    position: sticky;
+    width: 100%;
+    text-align: center;
 }
 
 #footerlinks {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 footer a {
     text-decoration: none;
     font-size: 20px;
-    padding: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    
 }
 
 footer h3 {color: #000;}
 
-#farvefooter1 {background-color: var(--primærRod);}
-#farvefooter2 {background-color: var(--lyserod);}
-#farvefooter3 {background-color: var(--lysGul);}
-#farvefooter4 {background-color: var(--orange);}
+#vinter {
+    background-color: var(--primærRod);
+    width: 25%;
+}
+#forår {
+    background-color: var(--lyserod);
+    width: 25%;
+}
+#sommer {
+    background-color: var(--lysGul);
+    width: 25%;
+}
+#efterår {
+    background-color: var(--orange);
+    width: 25%;
+}
