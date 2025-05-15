@@ -26,6 +26,10 @@ h2, h3, p {
     color: var(--lysGul);
 }
 
+article h2 {
+    margin-top: 60px;
+}
+
 p {
     word-wrap: break-word;
 
@@ -41,8 +45,9 @@ p {
     margin: auto;
 }
 
-
-
+#sporsmal {
+    margin-top: 20px;
+}
 
 
 /* The container */
