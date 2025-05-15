@@ -17,6 +17,12 @@
 
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 h1 {
     color: var(--lysGul);
@@ -58,7 +64,9 @@ p {
 
 
 footer {
-    line-height: 1.6;
+    position: sticky;
+    bottom: 0;
+    margin-top: 40px;
 }
 
 #footerlinks {
@@ -70,9 +78,10 @@ footer {
 footer a {
     text-decoration: none;
     font-size: 20px;
-    padding: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 25%;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 footer h3 {color: #000;}
