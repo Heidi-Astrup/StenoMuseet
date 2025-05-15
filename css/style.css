@@ -74,32 +74,31 @@ footer {
 #footerlinks {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
-footer a {
-    text-decoration: none;
-    font-size: 20px;
-    
+
+
+footer h3 {
+    color: #000;
+}
+
+#vinter, #forår, #sommer, #efterår {
+    width: 25%;
     padding-top: 25px;
     padding-bottom: 25px;
+    text-decoration: none;
+    font-size: 20px;
 }
-
-footer h3 {color: #000;}
 
 #vinter {
     background-color: var(--primærRod);
-    width: 25%;
 }
 #forår {
     background-color: var(--lyserod);
-    width: 25%;
 }
 #sommer {
     background-color: var(--lysGul);
-    width: 25%;
 }
 #efterår {
     background-color: var(--orange);
-    width: 25%;
 }
