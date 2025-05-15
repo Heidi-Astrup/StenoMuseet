@@ -17,8 +17,10 @@
 
 }
 
-body {
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -62,10 +64,11 @@ p {
 
 
 footer {
-    line-height: 1.6;
-    position: sticky;
     width: 100%;
     text-align: center;
+    position: sticky;
+    bottom: 0;
+    margin-top: 40px;
 }
 
 #footerlinks {
@@ -78,6 +81,8 @@ footer a {
     text-decoration: none;
     font-size: 20px;
     
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 footer h3 {color: #000;}
