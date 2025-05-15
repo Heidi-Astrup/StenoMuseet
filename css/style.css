@@ -56,6 +56,10 @@ p {
     font-size: 30px;
 }
 
+main {
+    padding-bottom: 35px;
+}
+
 
 .containerO {
     display: flex;
@@ -68,7 +72,6 @@ footer {
     text-align: center;
     position: sticky;
     bottom: 0;
-    margin-top: 40px;
 }
 
 #footerlinks {

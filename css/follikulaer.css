@@ -1,0 +1,81 @@
+:root {
+    --lysGul: #f0d597;
+    --orange: #ee6f20;
+    --lyserod: #f7d1be;
+    --primærRod: #b02519;
+    --eglosningRod: #82363b;
+    --forsideRod: #b24c47;
+
+    --displayFont: 'Impact', sans-serif;
+    --font: 'Noto Sans', sans-serif;
+
+}
+
+main {
+    background-color: var(--lyserod);
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 110px;
+}
+
+main h2, main h3 {color: var(--primærRod);}
+
+main p {
+    color: var(--primærRod);
+    margin: 20px;
+  }
+
+#follikulaeraeg {
+    padding-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#follikulaeraeg p {
+    font-size: 35px;
+}
+
+/*Flex'er tekst og graf, så de står ved siden af hinanden*/
+#follikulaer {
+    /*display: flex;
+    justify-content: space-between;*/
+    padding-top: 5%;
+    width: 95%;
+    margin: auto;
+    color: var(--eglosningRod);
+}
+
+
+/*kilde til at lave skrift omkring billede: https://www.geeksforgeeks.org/how-to-wrap-the-text-around-an-image-using-html-and-css/ */
+.graf {
+    float: right;
+    width: 50%;
+}
+
+#aeg {
+    justify-self: center;
+    align-self: center;
+    width: 40%;
+    transform: scale(0.4);
+    animation: pulse 1.5s infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.4);
+        box-shadow: 0 0 0 0;
+    }
+
+    50% {
+        transform: scale(0.8);
+        box-shadow: 0 0 0;
+    }
+
+    100% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 0;
+    }
+}
