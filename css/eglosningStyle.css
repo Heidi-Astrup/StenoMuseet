@@ -45,11 +45,11 @@ h2, h3 {
     margin: auto;
 }
 
-/*Ændre farven på popup fra leaflet - kilde til hjælp: https://stackoverflow.com/questions/20532635/how-can-i-change-the-background-color-of-a-leaflet-popup */
+/*Ændre farven på popup fra leaflet
+kilde til hjælp: https://stackoverflow.com/questions/20532635/how-can-i-change-the-background-color-of-a-leaflet-popup */
 .leaflet-popup-content-wrapper, .leaflet-popup-tip {
   background-color: var(--eglosningRod);
   color: var(--lysGul);
-  font-size: 30px;
 }
 
 /*Ændre farven på baggrunden af leaflet til gennemsigtig - kilde til kode: https://gis.stackexchange.com/questions/106811/make-leaflet-map-background-transparent*/
