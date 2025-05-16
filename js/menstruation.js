@@ -49,7 +49,7 @@ function tick2 () {
       // Optionally reset the video's playback position
       // video.currentTime = 0;
     knap2()
-    }, 20 * 1000);
+    }, 69 * 1000);
     
   }
 
@@ -79,7 +79,7 @@ function tick2 () {
       // Optionally reset the video's playback position
       // video.currentTime = 0;
     knap3()
-    }, 15 * 1000);
+    }, 52 * 1000); //tidspunkt hvor den skal stoppe: 3:32
     
   }
 

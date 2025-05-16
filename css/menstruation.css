@@ -58,6 +58,7 @@ main {
 #boks button {
     font-family: var(--font);
     font-size: 30px;
+    font-weight: 700;
     background-color: var(--primærRod);
     color: var(--lyserod);
     border: 0px;
