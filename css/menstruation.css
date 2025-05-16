@@ -31,10 +31,6 @@ main {
 
 }
 
-.containerO {
-    display: flex;
-    justify-content: flex-start;
-}
 
 #video {
     margin-top: 10px;
