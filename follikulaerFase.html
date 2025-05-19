@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Link til stylesheets-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/follikulaer.css">
-    <title>Document</title>
+    
+    <title>Follikulær fase | Indre forår</title>
 </head>
 <body>
     <main>
+        <!--Container til cirkel, der linker til forside, og overskrift -->
         <div class="containerO">
             <div>
-                <!--Cirkel med svg -->
+                <!--Cirkel med svg  - kilde: https://www.w3schools.com/graphics/svg_circle.asp-->
                 <a href="index.html">
                     <svg height="240" width="240" xmlns="http://www.w3.org/2000/svg">
                         <circle id="cirkel" r="75" cx="120" cy="120" stroke="#b02519" stroke-width="50" fill="none" />
@@ -24,7 +28,7 @@
             </div>
         </div>
 
-
+        <!--article med bevægende billede af æg og tekst-->
         <article id="follikulaeraeg">
             <div id="aeg"><img src="images/aeg.svg" alt=""></div>
             <p>
@@ -33,6 +37,8 @@
                 sexlyst og langt mindre lyst til at være social.
             </p>
         </article>
+
+        <!--article der indeholder et billede af en graf, en lydfil og tekst-->
         <article id="follikulaer">
             <img class="graf" src="images/ostrogen.svg" alt="Graf over mængde af øatrogen og progesteron der er i kvindens krop i Luteal fasen">
             <audio controls>
@@ -49,11 +55,12 @@
 
     </main>
 
+    <!--Id til footer, der bliver skrevet i js-->
     <footer id="fod">
     </footer>
 
+    <!--Link til javascript med footer-->
     <script src="js/js.js"></script>
-    <script src="js/livmoder.js"></script>
 
 </body>
 </html>

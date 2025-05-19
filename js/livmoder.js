@@ -67,7 +67,7 @@ var folikkel = L.circle([583, 850], {
     color: 'rgba(255,0,0,0)',
     fillColor: 'rgba(255,0,0,0)',
     radius: 20
-}).addTo(map).bindPopup("<p>Folikkel = basiclly en æggeskal, hvor æget ligger indeni</p>");
+}).addTo(map).bindPopup("<p>Folikkel = basically en æggeskal, hvor æget ligger indeni</p>");
 
 //eg
 var eg = L.circle([623, 875], {

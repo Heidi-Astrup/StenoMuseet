@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luteal fase | Efterår</title>
+    
+    <!--Link til stylesheets-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lutealStyle.css">
+
+    <title>Luteal fase | Indre efterår</title>
+
 </head>
 <body>
 
     <main>
+        <!--Container til cirkel, der linker til forside, og overskrift -->
         <div class="containerO">
             <div>
-                <!--Cirkel med svg -->
+                <!--Cirkel med svg  - kilde: https://www.w3schools.com/graphics/svg_circle.asp-->
                 <a href="index.html">
                     <svg height="240" width="240" xmlns="http://www.w3.org/2000/svg">
                         <circle id="cirkel" r="75" cx="120" cy="120" stroke="#f0d597" stroke-width="50" fill="none" />
@@ -25,9 +30,10 @@
             </div>
         </div>
 
-
+        <!--billede af en graf-->
         <img src="images/prosteteron.svg" alt="Graf over mængde af øatrogen og progesteron der er i kvindens krop i Luteal fasen">
 
+        <!--lydfil og tekst der hører til grafen ovenover-->
         <article id="ostrogenTekst">
             <audio controls>
                 <source src="sound/grafOstPro.mp3" type="audio/mpeg">
@@ -49,6 +55,7 @@
             </p>
         </article>
 
+        <!--sektion med spørgsmål, lavet i javascript-->
         <article id="sporgsmalSektion">
             <h2>
                 SPØRGSMÅL
@@ -62,6 +69,7 @@
             <div id="sporsmal"></div>
         </article>
 
+        <!--article med overskrift og en video-->
         <article id="pms">
             <h2>
                 HVAD ER PMS?
@@ -74,9 +82,11 @@
 
     </main>
 
+    <!--Footer lavet i javascript, linkes med id'en fod-->
     <footer id="fod">
     </footer>
 
+    <!--Link til hoved javascript, og lutealfasens javascript--> 
     <script src="js/js.js"></script>
     <script src="js/luteal.js"></script>
 

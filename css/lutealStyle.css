@@ -1,3 +1,4 @@
+/*Kodekommentar med hjælp fra chatGPT: https://chatgpt.com/share/682b0035-1034-800e-a21d-1eb4e4f03dfd*/
 
 /* Importerer skrifttypen 'Impact' til brug som display-font */
 @import url('https://fonts.cdnfonts.com/css/impact');
@@ -11,84 +12,93 @@
     --orange: #ee6f20; /* Orange farve */
     --lyserod: #f7d1be; /* Lyserød farve */
     --primærRod: #b02519; /* Primær rød farve */
-    --eglosningRod: #82363b; /* Rød farve specifikt til ægløsningssiden */
-    --forsideRod: #b24c47; /* Rød farve specifikt til forsiden */
+    --eglosningRod: #82363b; /* Rød farve til ægløsningssiden */
+    --forsideRod: #b24c47; /* Rød farve til forsiden */
 
-    --displayFont: 'Impact', sans-serif; /* Display-font */
-    --font: 'Noto Sans', sans-serif; /* Brødtekst-font */
+    --displayFont: 'Impact', sans-serif; /* Skrifttype til overskrifter */
+    --font: 'Noto Sans', sans-serif; /* Skrifttype til brødtekst */
 }
 
+/* Baggrundsfarve for hele siden */
 body {
     background-color: var(--orange);
 }
 
+/* Farveindstillinger for overskrifter og brødtekst */
 h2, h3, p {
     color: var(--lysGul);
 }
 
+/* Tilføjer margin-top til h2 elementer i artikler */
 article h2 {
     margin-top: 60px;
 }
 
+/* Tillader orddeling i lange tekststrenge */
 p {
     word-wrap: break-word;
-
 }
 
+/* Margin-top til element med id 'br', så breakline blvier lidt større */
 #br {
     margin-top: 30px;
 }
 
-
+/* Justering af bredde og centrering for specifikke sektioner */
 #ostrogenTekst, #sporgsmalSektion {
     width: 90%;
     margin: auto;
 }
 
+/* Margin-top for elementet med id 'sporsmal' */
 #sporsmal {
     margin-top: 20px;
 }
 
 
-/* The container */
+
+/* 
+Kilde til styling af radio knapper:
+Inspireret af et svar på Stack Overflow:
+https://stackoverflow.com/questions/57441494/how-to-fix-custom-radio-button-in-webforms 
+*/
+/* Stil og placering af den overordnede container for radioknapper */
 .container {
-  display: row;
-  position: relative;
-  padding-left: 60px;
-  margin-bottom: 12px;
-  margin-right: 50px;
-  cursor: pointer;
-  font-size: 40px;
-  font-family: var(--displayFont);
-  font-weight: 100;
-  color: var(--lysGul);
+    display: row; /* Radopstilling af elementer */
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 12px;
+    margin-right: 50px;
+    font-size: 40px; /* Tekststørrelse */
+    font-family: var(--displayFont); /* Display-font */
+    font-weight: 100; /* Let vægt for skrifttypen */
+    color: var(--lysGul); /* Tekstfarve */
 }
 
-/* Hide the browser's default radio button */
+/* Skjuler browserens standard radioknap */
 .container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
 
-/* Create a custom radio button */
+/* Opretter en brugerdefineret radioknap */
 .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 35px;
-  width: 35px;
-  border: 7px solid var(--lysGul);
-  border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35px; /* Højde på radioknappen */
+    width: 35px; /* Bredde på radioknappen */
+    border: 7px solid var(--lysGul); /* Kant med gul farve */
+    border-radius: 50%; /* Rund kant for cirkulær form */
 }
 
-
-/* When the radio button is checked, add a blue background */
+/* Når radioknappen er valgt, tilføjes en gul baggrundsfarve */
 .container input:checked ~ .checkmark {
     background-color: var(--lysGul);
 }
 
-
+/* Justering af bredde og centrering for video med id'en pms */
 #pms {
     width: 90%;
     margin: auto;

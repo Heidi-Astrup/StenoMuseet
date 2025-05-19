@@ -1,83 +1,100 @@
+/*Kodekommentar med hjælp fra chatGPT: https://chatgpt.com/canvas/shared/682b029c97488191b7b581b328ef60e1*/
+
+/* Importerer skrifttypen 'Impact' til brug som display-font */
+@import url('https://fonts.cdnfonts.com/css/impact');
+
+/* Importerer skrifttypen 'Noto Sans' til brug som brødtekst-font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Definerer CSS-variabler for farver og skrifttyper */
 :root {
-    --lysGul: #f0d597;
-    --orange: #ee6f20;
-    --lyserod: #f7d1be;
-    --primærRod: #b02519;
-    --eglosningRod: #82363b;
-    --forsideRod: #b24c47;
+    --lysGul: #f0d597; /* Lys gul farve */
+    --orange: #ee6f20; /* Orange farve */
+    --lyserod: #f7d1be; /* Lyserød farve */
+    --primærRod: #b02519; /* Primær rød farve */
+    --eglosningRod: #82363b; /* Rød farve specifikt til ægløsningssiden */
+    --forsideRod: #b24c47; /* Rød farve specifikt til forsiden */
 
-    --displayFont: 'Impact', sans-serif;
-    --font: 'Noto Sans', sans-serif;
-
+    --displayFont: 'Impact', sans-serif; /* Display-font */
+    --font: 'Noto Sans', sans-serif; /* Brødtekst-font */
 }
 
+/* Definerer baggrundsfarve og padding for hovedsektionen */
 main {
     background-color: var(--lyserod);
     padding: 20px;
 }
 
+/* Sætter en meget stor fontstørrelse for H2-overskrifter */
 main h2 {
     font-size: 110px;
 }
 
+/* Angiver farven for H2- og H3-overskrifter */
 main h2, main h3 {
     color: var(--primærRod);
 }
 
+/* Definerer farve og margin for afsnit i hovedsektionen */
 main p {
     color: var(--primærRod);
     margin: 20px;
-  }
-
-#follikulaeraeg {
-    padding-top: 5%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
+/* Laver et gridlayout med to kolonner og tilføjer padding-top */
+#follikulaeraeg {
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Sætter en stor fontstørrelse for afsnit i 'follikulaeraeg'-sektionen */
 #follikulaeraeg p {
     font-size: 35px;
 }
 
-/*Flex'er tekst og graf, så de står ved siden af hinanden*/
+/* Flex'er tekst og graf, så de står ved siden af hinanden */
 #follikulaer {
+    /* Kommentar: Display flex er deaktiveret for nu */
     /*display: flex;
     justify-content: space-between;*/
     padding-top: 5%;
     width: 95%;
     margin: auto;
-    color: var(--eglosningRod);
+    color: var(--eglosningRod); /* Bruger farve fra variablen */
 }
 
-
-/*kilde til at lave skrift omkring billede: https://www.geeksforgeeks.org/how-to-wrap-the-text-around-an-image-using-html-and-css/ */
+/* Kilde: https://www.geeksforgeeks.org/how-to-wrap-the-text-around-an-image-using-html-and-css/ */
+/* Placering af grafik ved siden af tekst med float */
 .graf {
     float: right;
     width: 50%;
 }
 
+/* Centrerer og skalerer elementet 'aeg' med animation */
 #aeg {
     justify-self: center;
     align-self: center;
     width: 40%;
-    transform: scale(0.4);
-    animation: pulse 1.5s infinite;
-    animation-delay: 0.5s;
+    transform: scale(0.4); /* Initial skala */
+    animation: pulse 1.5s infinite; /* Uendelig pulsanimation */
+    animation-delay: 0.5s; /* Forsinker animationens start */
 }
 
+/* Definerer pulsanimationen */
 @keyframes pulse {
     0% {
-        transform: scale(0.4);
-        box-shadow: 0 0 0 0;
+        transform: scale(0.4); /* Startskala */
+        box-shadow: 0 0 0 0; /* Ingen skygge */
     }
 
     50% {
-        transform: scale(0.8);
-        box-shadow: 0 0 0;
+        transform: scale(0.8); /* Mellemskala */
+        box-shadow: 0 0 0; /* Ingen skygge */
     }
 
     100% {
-        transform: scale(1.1);
-        box-shadow: 0 0 0 0;
+        transform: scale(1.1); /* Slutskala */
+        box-shadow: 0 0 0 0; /* Ingen skygge */
     }
 }

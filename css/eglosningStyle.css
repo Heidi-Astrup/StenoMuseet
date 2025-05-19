@@ -1,4 +1,3 @@
-
 /* Importerer skrifttypen 'Impact' til brug som display-font */
 @import url('https://fonts.cdnfonts.com/css/impact');
 
@@ -18,59 +17,62 @@
     --font: 'Noto Sans', sans-serif; /* Brødtekst-font */
 }
 
-
+/* Indstiller baggrundsfarven for hele siden */
 body {
     background-color: var(--lysGul);
 }
 
+/* Definerer overskriftsfarve (h2 og h3) tilpasset ægløsningssiden */
 h2, h3 {
     color: var(--eglosningRod);
 }
 
+/* Style for knappen med id 'tryk' */
 #tryk {
-    color: var(--eglosningRod);
-    width: 35%;
-    margin: auto;
-    z-index: 100;
-    position: absolute;
-    top: 650px;
-    left: 5%;
-    font-size: 40px;
-    text-align: center;
+    color: var(--eglosningRod); /* Tekstfarve for knappen */
+    width: 35%; /* Knappens bredde som en procentdel af siden */
+    margin: auto; /* Centrerer elementet horisontalt */
+    z-index: 100; /* Lægger knappen øverst i stacking-rækkefølgen */
+    position: absolute; /* Placering i forhold til dens nærmeste positionerede forælder */
+    top: 650px; /* Justerer knappen vertikalt */
+    left: 5%; /* Justerer knappen horisontalt */
+    font-size: 40px; /* Tekststørrelse */
+    text-align: center; /* Centrerer teksten i knappen */
 }
 
+/* Style for elementet med id 'livmoder' */
 #livmoder { 
-    height: 750px; 
-    width: 95%;
-    margin: auto;
+    height: 750px; /* Højde af elementet */
+    width: 95%; /* Bredde som procentdel af forældreelementet */
+    margin: auto; /* Centrerer elementet horisontalt */
 }
 
-/*Ændre farven på popup fra leaflet
-kilde til hjælp: https://stackoverflow.com/questions/20532635/how-can-i-change-the-background-color-of-a-leaflet-popup */
+/* Ændrer farven på Leaflet-popup-elementerne
+   Kilde: https://stackoverflow.com/questions/20532635/how-can-i-change-the-background-color-of-a-leaflet-popup */
 .leaflet-popup-content-wrapper, .leaflet-popup-tip {
-  background-color: var(--eglosningRod);
-  color: var(--lysGul);
+    background-color: var(--eglosningRod); /* Baggrundsfarve */
+    color: var(--lysGul); /* Tekstfarve */
 }
 
-/*Ændre farven på baggrunden af leaflet til gennemsigtig - kilde til kode: https://gis.stackexchange.com/questions/106811/make-leaflet-map-background-transparent*/
+/* Ændrer Leaflet-containerens baggrundsfarve til gennemsigtig
+   Kilde: https://gis.stackexchange.com/questions/106811/make-leaflet-map-background-transparent */
 .leaflet-container {
-    background-color:rgba(255,0,0,0.0);
+    background-color: rgba(255, 0, 0, 0.0); /* Gennemsigtig baggrund */
 }
 
-
-/*Flex'er tekst og graf, så de står ved siden af hinanden*/
+/* Style for elementet med id 'grafPeak', der indeholder tekst og graf */
 #grafPeak {
-    /*display: flex;
-    justify-content: space-between;*/
-    width: 95%;
-    margin: auto;
-    color: var(--eglosningRod);
+    /*display: flex; 
+    justify-content: space-between;*/ /* Kommentaret kode til fremtidig brug */
+    width: 95%; /* Bredde som procentdel af forældreelementet */
+    margin: auto; /* Centrerer elementet horisontalt */
+    color: var(--eglosningRod); /* Tekstfarve */
 }
 
-
-/*kilde til at lave skrift omkring billede: https://www.geeksforgeeks.org/how-to-wrap-the-text-around-an-image-using-html-and-css/ */
+/* Indpakning af tekst omkring et billede
+   Kilde: https://www.geeksforgeeks.org/how-to-wrap-the-text-around-an-image-using-html-and-css/ */
 .graf {
-    float: right;
-    margin: 15px;
-    width: 60%;
+    float: right; /* Placerer elementet til højre */
+    margin: 15px; /* Giver afstand omkring elementet */
+    width: 60%; /* Billedets bredde som procentdel af forældreelementet */
 }
