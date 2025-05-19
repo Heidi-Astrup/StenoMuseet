@@ -17,7 +17,7 @@ function tick(e) {
 }
 
 function knap () {
-        hej.innerHTML += `
+        sporgsmalsBoks.innerHTML += `
         <article id="boks">
           <h3>Hvor meget bløder en kvinde i gennemsnit?</h3>
           <button type="button" onclick="playVid()">10 ml = 1 spiseske</button>
@@ -33,7 +33,7 @@ let vid = document.getElementById("video");
 
   function playVid() { 
   vid.play(); 
-  hej.innerHTML = `
+  sporgsmalsBoks.innerHTML = `
         
         `
   tick2();
@@ -54,7 +54,7 @@ function tick2 () {
   }
 
   function knap2 () {
-    hej.innerHTML += `
+    sporgsmalsBoks.innerHTML += `
         <article id="boks">
           <h3>Hvor mange dage varer en menstruation i gennemsnit?</h3>
           <button type="button" onclick="playVid2()">1-3 dage</button>
@@ -67,7 +67,7 @@ function tick2 () {
 
     function playVid2() { 
   vid.play(); 
-  hej.innerHTML = `
+  sporgsmalsBoks.innerHTML = `
         
         `
   tick3();
@@ -84,7 +84,7 @@ function tick2 () {
   }
 
   function knap3 () {
-    hej.innerHTML += `
+    sporgsmalsBoks.innerHTML += `
         <article id="boks">
           <h3>Endometriose</h3>
           <a href="#endometriose"><button type="button">Vil du læse mere?</button></a>
@@ -96,7 +96,7 @@ function tick2 () {
 
       function playVid3() { 
   vid.play(); 
-  hej.innerHTML = `
+  sporgsmalsBoks.innerHTML = `
         
         `
 } 

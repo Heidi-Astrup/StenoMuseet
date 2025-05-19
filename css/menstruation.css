@@ -1,89 +1,94 @@
-/*Import af display font*/
+/*Kodekommentar lavet med ChatGPT: https://chatgpt.com/share/682ae9f2-2888-800e-9528-046b000c23d2*/
+
+/* Importerer skrifttypen 'Impact' til brug som display-font */
 @import url('https://fonts.cdnfonts.com/css/impact');
 
-/*Import af brødtekst font*/
+/* Importerer skrifttypen 'Noto Sans' til brug som brødtekst-font */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+/* Definerer CSS-variabler for farver og skrifttyper */
 :root {
-    --lysGul: #f0d597;
-    --orange: #ee6f20;
-    --lyserod: #f7d1be;
-    --primærRod: #b02519;
-    --eglosningRod: #82363b;
-    --forsideRod: #b24c47;
+    --lysGul: #f0d597; /* Lys gul farve */
+    --orange: #ee6f20; /* Orange farve */
+    --lyserod: #f7d1be; /* Lyserød farve */
+    --primærRod: #b02519; /* Primær rød farve */
+    --eglosningRod: #82363b; /* Rød farve specifikt til ægløsningssiden */
+    --forsideRod: #b24c47; /* Rød farve specifikt til forsiden */
 
-    --displayFont: 'Impact', sans-serif;
-    --font: 'Noto Sans', sans-serif;
-
+    --displayFont: 'Impact', sans-serif; /* Display-font */
+    --font: 'Noto Sans', sans-serif; /* Brødtekst-font */
 }
 
+/* Fjerner standardmargin, padding og sikrer korrekt box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Styling til <main>-elementet */
 main {
-    padding-top: 6%;
-    background-color: var(--primærRod);
-    color: var(--lyserod);
-
+    padding-top: 6%; /* Giver afstand fra toppen */
+    background-color: var(--primærRod); /* Baggrundsfarve */
+    color: var(--lyserod); /* Tekstfarve */
 }
 
-
+/* Margin til menstrutions video */
 #video {
-    margin-top: 10px;
+    margin-top: 10px; /* Lægger 10px margen ovenfor video */
 }
 
-
+/* Styling til spørgmålsboksen der dukker op i videoen */
 #boks {
-    background-color: var(--lyserod);
-    color: var(--primærRod);
-    z-index: 100;
-    position: absolute;
-    top: 600px;
-    left: 200px;
-    width: 600px;
-    height: 35%;
-    border-radius: 30px;
-    text-align: center;
-    padding-top: 20px;
+    background-color: var(--lyserod); /* Baggrundsfarve */
+    color: var(--primærRod); /* Tekstfarve */
+    z-index: 100; /* Sørger for, at boksen er foran andre elementer */
+    position: absolute; /* Absolut placering */
+    top: 600px; /* Placering fra toppen */
+    left: 200px; /* Placering fra venstre */
+    width: 600px; /* Bredde */
+    height: 35%; /* Højde */
+    border-radius: 30px; /* Runde hjørner */
+    text-align: center; /* Centrerer tekst */
+    padding-top: 20px; /* Indvendig margen ovenfor */
 }
 
+/* Styling til knapper i spørgmålsboksen */
 #boks button {
-    font-family: var(--font);
-    font-size: 30px;
-    font-weight: 700;
-    background-color: var(--primærRod);
-    color: var(--lyserod);
-    border: 0px;
-    width: 90%;
-    margin-top: 25px;
-    border-radius: 30px;
+    font-family: var(--font); /* Brødtekst-font */
+    font-size: 30px; /* Skriftstørrelse */
+    font-weight: 700; /* Fed tekst */
+    background-color: var(--primærRod); /* Knapbaggrund */
+    color: var(--lyserod); /* Knaptekstfarve */
+    border: 0px; /* Fjerner kantlinje */
+    width: 90%; /* Knapbredde */
+    margin-top: 25px; /* Lægger afstand ovenfor knappen */
+    border-radius: 30px; /* Runde hjørner */
 }
 
-
+/* Styling til et afsnit med ID'et 'endometriose' */
 #endometriose {
-    padding-top: 60px;
-    width: 90%;
-    margin: auto;
-    font-family: var(--font);
-    font-weight: 700;
-    font-size: 30px;
+    padding-top: 60px; /* Indvendig margen fra toppen */
+    width: 90%; /* Bredde */
+    margin: auto; /* Centrerer elementet */
+    font-family: var(--font); /* Brødtekst-font */
+    font-weight: 700; /* Fed tekst */
+    font-size: 30px; /* Skriftstørrelse */
 }
 
+/* Styling til video om endometriose med ID'et 'endo' */
 #endo {
-    width: 50%;
-    float: right;
-    border-radius: 20px;
+    width: 50%; /* Billedebredde */
+    float: right; /* Placerer billede til højre */
+    border-radius: 20px; /* Runde hjørner */
 }
 
+/* Styling til tekstsektion ved siden af endometriose videoen */
 #tekst {
-    width: 45%;
+    width: 45%; /* Bredde */
 }
 
+/* En class til større tekst, ved fremhævning af 10% og 7 år */
 .stor {
-    font-size: 70px;
+    font-size: 70px; /* Stor skriftstørrelse */
 }
-

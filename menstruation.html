@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menstruation.css">
-    <title>Document</title>
+    
+    <title>Menstruation | Indre vinter</title>
 </head>
 <body>
 
 <main>
+    <!--Container til cirkel, der linker til forside, og overskrift -->
     <div class="containerO">
         <div>
             <!--Cirkel med svg  - kilde: https://www.w3schools.com/graphics/svg_circle.asp-->
@@ -25,13 +28,15 @@
         </div>
     </div>
 
+    <!--Id som bruges i javascriptet til at lave HTML injektion - bruges til at stille brugeren spørgsmål-->
+    <div id="sporgsmalsBoks"></div>
 
-    <div id="hej"></div>
-
+    <!--video, linkes fra eget website, da videoen fylder meget-->
     <video id="video" playsinline controls autoplay width="100%" controls>
       <source src="https://videoer.astrupdesigns.dk/lillePodcast.mp4" type="video/mp4">
     </video>
 
+    <!--Afsnit efter videoen, med endometriose-->
     <article id="endometriose">
       <h2>
         Endometriose
@@ -48,13 +53,13 @@
     
 </main>    
 
-
+<!--Footer lavet i javascript, linkes med id'en fod-->
 <footer id="fod">
-    </footer>
+</footer>
 
-    
-    <script src="js/menstruation.js"></script>
-    <script src="js/js.js"></script>
+<!--Link til menstruations javascript, og hoved-javascript--> 
+<script src="js/menstruation.js"></script>
+<script src="js/js.js"></script>
 
 </body>
 </html>

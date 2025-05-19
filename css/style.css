@@ -1,104 +1,112 @@
-/*Import af display font*/
+/* kommentar til kode lavet meed ChatGPT: https://chatgpt.com/share/682af0f9-3bf0-800e-9d4c-0a3805a7d199 */
+
+/* Importerer skrifttypen 'Impact' til brug som display-font */
 @import url('https://fonts.cdnfonts.com/css/impact');
 
-/*Import af brødtekst font*/
+/* Importerer skrifttypen 'Noto Sans' til brug som brødtekst-font */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Definerer CSS-variabler for farver og skrifttyper */
 :root {
-    --lysGul: #f0d597;
-    --orange: #ee6f20;
-    --lyserod: #f7d1be;
-    --primærRod: #b02519;
-    --eglosningRod: #82363b;
-    --forsideRod: #b24c47;
+    --lysGul: #f0d597; /* Lys gul farve */
+    --orange: #ee6f20; /* Orange farve */
+    --lyserod: #f7d1be; /* Lyserød farve */
+    --primærRod: #b02519; /* Primær rød farve */
+    --eglosningRod: #82363b; /* Rød farve specifikt til ægløsningssiden */
+    --forsideRod: #b24c47; /* Rød farve specifikt til forsiden */
 
-    --displayFont: 'Impact', sans-serif;
-    --font: 'Noto Sans', sans-serif;
-
+    --displayFont: 'Impact', sans-serif; /* Display-font til overskrifter */
+    --font: 'Noto Sans', sans-serif; /* Brødtekst-font til afsnit */
 }
 
+/* Generel nulstilling af marginer og paddings for alle elementer */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-h1 {
-    color: var(--lysGul);
-}
-
+/* Styling til H2-overskrifter */
 h2 {
-    font-size: 120px;
-    font-family: var(--displayFont);
-    margin-bottom: 0px;
-    margin-top: 0px;
-    font-weight: 100;
-
-
+    font-size: 120px; /* Stor skrifttype til prominente overskrifter */
+    font-family: var(--displayFont); /* Bruger display-fonten */
+    margin-bottom: 0px; /* Ingen afstand under */
+    margin-top: 0px; /* Ingen afstand over */
+    font-weight: 100; /* Let tekst */
 }
 
+/* Styling til H3-overskrifter */
 h3 {
-    font-size: 60px;
-    font-family: var(--displayFont);
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-weight: 100;
-
+    font-size: 60px; /* Mellemstor skrifttype */
+    font-family: var(--displayFont); /* Bruger display-fonten */
+    margin-top: 0px; /* Ingen afstand over */
+    margin-bottom: 0px; /* Ingen afstand under */
+    font-weight: 100; /* Let tekst */
 }
 
+/* Styling til paragraf-tekst */
 p {
-    font-family: var(--font);
-    font-weight: 700;
-    font-size: 30px;
+    font-family: var(--font); /* Bruger brødtekst-fonten */
+    font-weight: 700; /* Fed tekst */
+    font-size: 30px; /* Stor skrifttype for nem læsning */
 }
 
+/* Styling til hovedindholdet */
 main {
-    padding-bottom: 35px;
+    padding-bottom: 35px; /* Giver plads under hovedindholdet */
 }
 
-
+/* Styling til containerO, der sætter overskrift og cirkel med link til forside, ved siden af hinanden - bruges på alle undersider */
 .containerO {
-    display: flex;
-    justify-content: flex-start;
+    display: flex; /* Flex-container så tekst og cirkel kan stå ved siden af hinanden */
+    justify-content: flex-start; /* Elementer placeres til venstre */
 }
 
-
+/* Styling til footer-elementet */
 footer {
-    width: 100%;
-    text-align: center;
-    position: sticky;
-    bottom: 0;
+    width: 100%; /* Fylder hele bredden */
+    text-align: center; /* Centrerer teksten */
+    position: sticky; /* Holder footeren synlig i bunden af siden */
+    bottom: 0; /* Fast placering i bunden */
 }
 
+/* Styling til links i footeren */
 #footerlinks {
-    display: flex;
-    flex-direction: row;
+    display: flex; /* Flex-container til vandret layout */
+    flex-direction: row; /* Elementer arrangeres i en række */
 }
 
-
-
+/* Styling til H3-overskrifter i footeren */
 footer h3 {
-    color: #000;
-    font-size: 60px;
+    color: #000; /* Sort tekstfarve */
+    font-size: 60px; /* Mellemstor skrifttype */
 }
 
+/* Styling til hver del af footeren */
 #vinter, #forår, #sommer, #efterår {
-    width: 25%;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    text-decoration: none;
-    font-size: 20px;
+    width: 25%; /* Hver sektion fylder en fjerdedel af bredden */
+    padding-top: 25px; /* Giver luft over teksten */
+    padding-bottom: 25px; /* Giver luft under teksten */
+    text-decoration: none; /* Fjerner understregning af tekst */
+    font-size: 20px; /* Skrifttype tilpasset sektioner */
 }
 
+/* Specifik styling til vintersektionen */
 #vinter {
-    background-color: var(--primærRod);
+    background-color: var(--primærRod); /* Primær rød farve */
 }
+
+/* Specifik styling til forårsektionen */
 #forår {
-    background-color: var(--lyserod);
+    background-color: var(--lyserod); /* Lyserød farve */
 }
+
+/* Specifik styling til sommersektionen */
 #sommer {
-    background-color: var(--lysGul);
+    background-color: var(--lysGul); /* Lys gul farve */
 }
+
+/* Specifik styling til efterårsektionen */
 #efterår {
-    background-color: var(--orange);
+    background-color: var(--orange); /* Orange farve */
 }
