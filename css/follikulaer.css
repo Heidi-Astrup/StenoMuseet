@@ -20,7 +20,9 @@ main h2 {
     font-size: 110px;
 }
 
-main h2, main h3 {color: var(--primærRod);}
+main h2, main h3 {
+    color: var(--primærRod);
+}
 
 main p {
     color: var(--primærRod);
