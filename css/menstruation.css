@@ -92,3 +92,23 @@ main {
 .stor {
     font-size: 70px; /* Stor skriftstørrelse */
 }
+
+
+
+/* Styling til hver del af footeren */
+#vinter, #forår, #sommer, #efterår {
+    width: 25%; /* Hver sektion fylder en fjerdedel af bredden */
+    padding-top: 25px; /* Giver luft over teksten */
+    padding-bottom: 25px; /* Giver luft under teksten */
+    text-decoration: none; /* Fjerner understregning af tekst */
+    font-size: 20px; /* Skrifttype tilpasset sektioner */
+}
+
+/* Styling til H3-overskrifter i footeren */
+footer h3 {
+    color: #000; /* Sort tekstfarve */
+    font-size: 50px; /* Mellemstor skrifttype */
+}
+
+
+

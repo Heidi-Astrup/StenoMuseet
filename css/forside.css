@@ -46,6 +46,7 @@ h2 {
     position: relative; /* Relativ positionering for at kunne placere indre elementer */
     width: 90%; /* Sætter bredden til 90% af slærmen */
     justify-self: center; /* Centrerer elementet */
+    margin: auto;
     display: flex; /* Bruger flexbox til layoutstyring */
     z-index: 1; /* Sørger for, at dette element vises bag elementer med højere z-index */
 }

@@ -103,3 +103,11 @@ https://stackoverflow.com/questions/57441494/how-to-fix-custom-radio-button-in-w
     width: 90%;
     margin: auto;
 }
+
+
+
+/* Styling til H3-overskrifter i footeren */
+footer h3 {
+    color: #000; /* Sort tekstfarve */
+    font-size: 50px; /* Mellemstor skrifttype */
+}
