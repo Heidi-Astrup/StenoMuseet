@@ -87,8 +87,8 @@ function tick2 () {
     sporgsmalsBoks.innerHTML += `
         <article id="boks">
           <h3>Endometriose</h3>
-          <a href="#endometriose"><button type="button">Vil du læse mere?</button></a>
-
+          <a href="#endometriose">
+          <button type="button">Vil du læse mere?</button></a>
           <button type="button" onclick="playVid3()">Fortsæt video</button>
         </article>
         `
@@ -100,5 +100,3 @@ function tick2 () {
         
         `
 } 
-
-
